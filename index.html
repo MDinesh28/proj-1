@@ -3,47 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My Portfolio</title>
+    <title>Dinesh's Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-            text-align: center;
+            background-color: #f8f9fa;
         }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 0;
-        }
-        main {
+        .container {
+            width: 80%;
+            margin: 0 auto;
             padding: 20px;
         }
-        footer {
-            background-color: #333;
+        .navbar {
+            background-color: #007bff;
+            padding: 10px;
             color: white;
-            padding: 10px 0;
-            position: fixed;
+            text-align: center;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .jumbotron {
+            background-color: #007bff;
+            color: white;
+            padding: 30px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .jumbotron h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .jumbotron p {
+            font-size: 1.25em;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px -15px;
+        }
+        .col-12 {
             width: 100%;
-            bottom: 0;
+            padding: 15px;
+        }
+        .list-group {
+            list-style: none;
+            padding: 0;
+        }
+        .list-group-item {
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            padding: 15px;
+            background-color: white;
+        }
+        .list-group-item h5 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .list-group-item p {
+            margin: 10px 0;
+            font-size: 1em;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .about, .projects, .contact {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .about h2, .projects h2, .contact h2 {
+            margin-top: 0;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact input, .contact textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact button {
+            padding: 10px;
+            font-size: 1em;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-    </header>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
 
-    <main>
-        <h2>Hello, I'm Dinesh!</h2>
-        <p>Welcome to my personal portfolio website. Here, you can find information about my projects, skills, and contact details. Feel free to explore and get in touch if you have any questions or opportunities.</p>
-        <p>Thank you for visiting!</p>
-    </main>
+    <div id="home" class="container">
+        <div class="jumbotron">
+            <h1>Hello, I'm Dinesh!</h1>
+            <p>DevOps Engineer</p>
+            <hr class="my-4">
+            <p>Experienced DevOps engineer with a strong background in cloud computing, automation, and continuous integration.</p>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h2>Latest Projects</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <h5>DevOps Project</h5>
+                        <p>A DevOps project that showcases automation and CI/CD pipelines.</p>
+                        <a href="#projects" class="btn">View Projects</a>
+                    </li>
+                    <li class="list-group-item">
+                        <h5>Java Application</h5>
+                        <p>A sample Java web application developed using Spring Boot.</p>
+                        <a href="#projects" class="btn">View Projects</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-    <footer>
-        <p>&copy; 2024 Dinesh. All rights reserved.</p>
-    </footer>
+    <div id="about" class="container">
+        <div class="about">
+            <h2>About Me</h2>
+            <p>My name is Dinesh, a passionate DevOps engineer with extensive experience in cloud computing, automation, and CI/CD pipelines. I have worked on various projects that involve setting up and managing infrastructure, deploying applications, and automating workflows. My skills include working with tools such as Docker, Jenkins, Kubernetes, and Terraform.</p>
+            <p>I hold a degree in Computer Science and have continuously updated my skills to keep up with the latest technologies and best practices in the field. I am dedicated to optimizing workflows and improving system reliability and performance.</p>
+        </div>
+    </div>
+
+    <div id="projects" class="container">
+        <div class="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <h3>DevOps Project</h3>
+                    <p>A DevOps project that showcases automation and CI/CD pipelines.</p>
+                    <a href="http://example.com/project1" class="btn">View Project</a>
+                </li>
+                <li>
+                    <h3>Java Application</h3>
+                    <p>A sample Java web application developed using Spring Boot.</p>
+                    <a href="http://example.com/project2" class="btn">View Project</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="contact" class="container">
+        <div class="contact">
+            <h2>Contact</h2>
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
