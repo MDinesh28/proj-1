@@ -1,0 +1,9 @@
+version: '3'
+services:
+  profile:
+    image: mdinesh28/portfolio:latest
+    ports:
+      - "80:80"
+    deploy:
+      replicas: 1
+
