@@ -1,20 +1,24 @@
-1. INSTALL DOCKER
+# CI/CD Pipeline with Jenkins and Docker
 
-yum install docker -y
-systemctl start docker
-systemctl status docker
-docker swarm init 
+## 1. INSTALL DOCKER
+   yum install docker -y
 
-2. INSTALLING JENKINS (MASTER)
+   systemctl start docker
 
-3. CREATE CUSTOM IMAGES
+   systemctl status docker
 
-DOCKER FILE
+   docker swarm init
+## 2. INSTALLING JENKINS (MASTER)
 
-4. GIVE PERMISSIONS
+## 3. CREATE CUSTOM IMAGES
+   DOCKER FILE
 
-chmod 777 /var/run/docker.sock
-systemctl daemon-reload
-systemctl restart docker.service
+## 4. GIVE PERMISSIONS
 
-5. WRITE COMPOSE FILE AND PUSH TO GITHUB
+   chmod 777 /var/run/docker.sock
+
+   systemctl daemon-reload
+
+   systemctl restart docker.service
+
+## 5. WRITE COMPOSE FILE AND PUSH TO GITHUB
